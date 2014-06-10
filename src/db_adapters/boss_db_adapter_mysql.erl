@@ -455,6 +455,6 @@ pack_value(false) ->
     "FALSE".
 
 fetch(Pid, Query) ->
-    lager:info("Query ~s", [iolist_to_binary(Query)]),
+    %lager:info("Query ~s", [iolist_to_binary(Query)]),
     mysql_conn:fetch(Pid, [Query], self()).
 
